@@ -1,7 +1,7 @@
 from zooAnimales.animal import Animal
 
 class Mamifero(Animal):
-    listado: [Mamifero] = []
+    listado = []
     caballos: int = 0
     leones: int = 0
 
