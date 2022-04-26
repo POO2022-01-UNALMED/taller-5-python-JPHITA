@@ -1,22 +1,33 @@
 class Animal:
-    totalAnimales: int = 0
+    _totalAnimales: int = 0
+
+    _anfibios: int = 0
+    _aves: int = 0
+    _mamiferos: int = 0
+    _peces: int = 0
+    _reptiles: int = 0
 
     def __init__(self, nombre, edad, habitat, genero):
         self._nombre: str = nombre
         self._edad: int = edad
         self._habitat: str = habitat
         self._genero: str = genero
-        self._zona = []
+        self._zona = None
+
+        Animal._totalAnimales += 1
     
     def movimiento(self):
         return ""
     
     @classmethod
     def totalPorTipo(cls):
-        pass
+        return F"Mamiferos : {_mamiferos}\nAves : {_aves}\nReptiles : {_reptiles}\nPeces : {_peces}\nAnfibios : {_anfibios}"
 
-    def __str__(self):
-        pass
+    def toString(self):
+        r = F"Mi nombre es {self._nombre}, tengo una edad de {self._edad}, habito en {self._habitat} y mi genero es {self._genero}"
+
+        if self._zona != None:
+            r += F"genero, la zona en la que me ubico es {self._zona.getNombre()}, en el {self._zona.getZoo().getNombre()}"
 
     def getNombre(self):
         return self._nombre

@@ -10,9 +10,12 @@ class Zoologico:
         self._Zonas.append(nuevaZona)
         nuevaZona.setZoo(self)
 
-    @classmethod
-    def cantidadTotalAnimales(cls):
-        pass
+    def cantidadTotalAnimales(self):
+        sum = 0
+        for zona in self._Zonas:
+            sum += zona.cantidadAnimales()
+
+        return sum
 
     def getNombre(self):
         return self._nombre
