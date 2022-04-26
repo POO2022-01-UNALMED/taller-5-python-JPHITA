@@ -1,7 +1,7 @@
 class Animal:
     _totalAnimales: int = 0
 
-    _mamiferos: int = 0
+    _mamiferos: int = 0.
     _anfibios: int = 0
     _aves: int = 0
     _mamiferos: int = 0
@@ -22,7 +22,7 @@ class Animal:
     
     @classmethod
     def totalPorTipo(cls):
-        return F"Mamiferos : {_mamiferos}\nAves : {_aves}\nReptiles : {_reptiles}\nPeces : {_peces}\nAnfibios : {_anfibios}"
+        return F"Mamiferos : {cls._mamiferos}\nAves : {cls._aves}\nReptiles : {cls._reptiles}\nPeces : {cls._peces}\nAnfibios : {cls._anfibios}"
 
     def toString(self):
         r = F"Mi nombre es {self._nombre}, tengo una edad de {self._edad}, habito en {self._habitat} y mi genero es {self._genero}"
