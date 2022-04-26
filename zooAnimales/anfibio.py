@@ -10,7 +10,7 @@ class Anfibio(Animal):
         self._colorPiel: str = colorPiel
         self._venenoso: bool = venenoso
 
-        Anfibio._anfibios += 1
+        Animal._anfibios += 1
     
     @classmethod
     def cantidadAnfibios(cls):
