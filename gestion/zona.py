@@ -3,9 +3,9 @@ from zooAnimales.animal import Animal
 
 class Zona:
     def __init__(self, nombre, zoo = None):
-        self.nombre: str = nombre
-        self.zoo: Zoologico = zoo
-        self.animales: [Animal] = []
+        self._nombre: str = nombre
+        self._zoo: Zoologico = zoo
+        self._animales: [Animal] = []
     
     def agregarAnimales(self, animal):
         self.animales.append(animal)
