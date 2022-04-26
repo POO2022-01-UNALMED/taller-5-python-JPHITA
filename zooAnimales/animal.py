@@ -1,6 +1,7 @@
 class Animal:
     _totalAnimales: int = 0
 
+    _mamiferos: int = 0
     _anfibios: int = 0
     _aves: int = 0
     _mamiferos: int = 0
