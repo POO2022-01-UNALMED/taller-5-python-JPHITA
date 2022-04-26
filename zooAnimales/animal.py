@@ -30,6 +30,10 @@ class Animal:
         if self._zona != None:
             r += F"genero, la zona en la que me ubico es {self._zona.getNombre()}, en el {self._zona.getZoo().getNombre()}"
 
+        return r
+
+
+
     def getNombre(self):
         return self._nombre
     def getEdad(self):
