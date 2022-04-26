@@ -10,7 +10,7 @@ class Mamifero(Animal):
         self._pelaje: bool = pelaje
         self._patas: int = patas
 
-        Mamifero._mamiferos += 1
+        Animal._mamiferos += 1
 
     @classmethod
     def cantidadMamiferos(cls):

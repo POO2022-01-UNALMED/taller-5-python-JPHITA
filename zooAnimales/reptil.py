@@ -10,7 +10,7 @@ class Reptil(Animal):
         self._colorEscamas: str = colorEscamas
         self._largoCola: int = largoCola
 
-        Reptil._reptiles += 1
+        Animal._reptiles += 1
     
     @classmethod
     def cantidadReptiles(cls):

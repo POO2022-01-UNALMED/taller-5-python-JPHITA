@@ -10,7 +10,7 @@ class Ave(Animal):
         super().__init__(nombre, edad, habitat, genero)
         self._colorPlumas: str = colorPlumas
 
-        Ave._aves += 1
+        Animal._aves += 1
 
     @classmethod
     def cantidadAves(cls):

@@ -10,7 +10,7 @@ class Pez(Animal):
         self._colorEscamas: str = colorEscamas
         self._cantidadAletas: int = cantidadAletas
 
-        Pez._peces += 1
+        Animal._peces += 1
     
     @classmethod
     def cantidadPeces(cls):
