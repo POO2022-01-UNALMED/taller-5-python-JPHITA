@@ -1,5 +1,3 @@
-from gestion.zona import Zona
-
 class Animal:
     totalAnimales: int = 0
 
@@ -8,7 +6,7 @@ class Animal:
         self._edad: int = edad
         self._habitat: str = habitat
         self._genero: str = genero
-        self._zona: [Zona] = []
+        self._zona = []
     
     def movimiento(self):
         return ""
