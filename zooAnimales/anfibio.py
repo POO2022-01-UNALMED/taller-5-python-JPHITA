@@ -2,8 +2,8 @@ from zooAnimales.animal import Animal
 
 class Anfibio(Animal):
     _listado = []
-    _ranas: int = 0
-    _salamandras: int = 0
+    ranas: int = 0
+    salamandras: int = 0
 
     def __init__(self, nombre, edad, habitat, genero, colorPiel, venenoso):
         super().__init__(nombre, edad, habitat, genero)
@@ -20,7 +20,7 @@ class Anfibio(Animal):
     def crearRana(cls, nombre, edad, genero):
         animalito = Anfibio(nombre, edad, "selva", genero, "rojo", True)
 
-        cls._ranas += 1
+        cls.ranas += 1
         cls._listado.append(animalito)
 
         return animalito
@@ -29,7 +29,7 @@ class Anfibio(Animal):
     def crearSalamandra(cls, nombre, edad, genero):
         animalito = Anfibio(nombre, edad, "selva", genero, "negro y amarillo", False)
 
-        cls._salamandras += 1
+        cls.salamandras += 1
         cls._listado.append(animalito)
 
         return animalito
